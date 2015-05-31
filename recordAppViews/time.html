@@ -1,0 +1,74 @@
+<div class="-centerOuter">
+    <div class="-centerInner">
+        <table class="dateChangePanel">
+            <tr>
+                <td>
+                    <a ng-if="previousDate !== null" ng-href="{{previousDate | dateUrl}}" class="dateChangePanel__previousButton" ></a>
+                </td>
+                <td>
+                    <div class="dateChangePanel__date"> 
+                        {{dateTextView}}        
+                    </div>
+                </td>
+                <td>
+                    <a class="dateChangePanel__nextButton" ng-href="{{nextDate | dateUrl}}"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="-stopFloat"></div>
+
+<div class="-centerOuter -marginTop20">
+    <div class="-centerInner">
+        <div class="timeItems">
+            <div ng-repeat="t in time track by $index" class="timeItems__timeWrapper " ng-switch="t.state" >
+                <a ng-switch-when="free" ng-href="{{t.timeTextView | timeUrl}}" class="timeItems__time -timeState--free -roundedCorners">
+                    {{t.timeTextView}}
+                </a>
+                <div ng-switch-when="busy" class="timeItems__time -timeState--busy -roundedCorners">
+                    {{t.timeTextView}}
+                </div>
+                <div ng-switch-when="recordImpossible" class="timeItems__time -timeState--recordImpossible -roundedCorners">
+                    {{t.timeTextView}}
+                </div>
+            </div>
+            <div class="-stopFloat"></div>
+        </div> 
+    </div>
+</div>
+<div class="-stopFloat"></div>
+
+<div ng-if="(time !== null) && (time.length !== 0)" class="-marginTop20">
+    <div class="-centerOuter">
+        <div class="-centerInner" style="margin-left : 40px;">
+            <table class="timeExplanations"> 
+                <tr>
+                    <td>
+                        <div class="timeExplanations__timeState -timeState--free -roundedCorners"></div>
+                    </td>
+                    <td>
+                        - время свободно
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="timeExplanations__timeState -timeState--busy -roundedCorners"></div>
+                    </td>
+                    <td>
+                        - время занято
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="timeExplanations__timeState -timeState--recordImpossible -roundedCorners"></div>
+                    </td>
+                    <td>
+                        - запись через интернет невозможна
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="-stopFloat"></div>
+</div>

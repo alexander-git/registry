@@ -1,0 +1,59 @@
+<div>   
+    <div class="-centerOuter">
+        <div class="-centerInner">
+            <table class="dateChangePanel">
+                <tr>
+                    <td>
+                        <a ng-if="startingDayOffset !== 0" ng-href="{{prevButtonDayOffset | scheduleUrl}}" class="dateChangePanel__previousButton" ></a>
+                    </td>
+                    <td>
+                        <div class="dateChangePanel__date"> 
+                            <span ng-bind-html="interval"></span>        
+                        </div>
+                    </td>
+                    <td>
+                        <a class="dateChangePanel__nextButton" ng-href="{{nextButtonDayOffset | scheduleUrl}}"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="-stopFloat"></div>
+</div>
+<table class="dayTable -notUnderlineLinks -marginTop20">
+    <tr>
+        <th ng-repeat="dh in dateHeads">
+            <a class="-fillWholeCell -azure" ng-href="{{ dayOffsets[$index] | scheduleUrl }}">
+                <table class="tableAlignment">
+                    <tr>
+                        <td class="tableAlignment__centerMiddle">
+                            <div class="dayTable__header">
+                                <span class="dayTable__dayOfWeek">{{dh.dayOfWeek}}</span>
+                                <br />
+                                <span class="dayTable__date">{{dh.date}}</span>
+                            </div>
+                        </td>
+                    </tr>    
+                </table>
+            </a>
+        </th>
+    </tr>
+    <tr>
+        <td ng-repeat="d in days track by $index">
+            <a ng-if="d !== null" ng-href="{{d.workDay.date | dateUrl}}" class="-fillWholeCell -darkAzure -darkAzure--action">
+                <table class="tableAlignment">
+                    <tr>
+                        <td class="tableAlignment__centerMiddle">
+                            <div class="dayTable__info" >
+                                <span class="dayTable__freeTimeItemsNumber">{{d.freeCount}}</span>
+                                / 
+                                <span class="dayTable__allTimeItemsNumber">{{d.allCount}}</span>
+                            </div>
+                        </td>
+                    </tr>    
+                </table>
+            </a> 
+            <div ng-if="d === null" class="-azure -fillWholeCell">&nbsp;</div>
+        </td>
+    </tr>
+</table>

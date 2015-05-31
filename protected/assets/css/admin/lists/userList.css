@@ -1,0 +1,42 @@
+.userList {
+    
+}
+
+.userList__listItem {
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    font-size : 16px;
+    margin-bottom : 12px;
+    margin-top : 0px;
+}
+
+.userList__listItem .userList__row {
+    margin-bottom : 3px;
+}
+
+.userList__row .userList___login {
+
+}
+
+.userList__row .userList__login a {
+    font-size : 18px;
+}
+
+.userList__row .userList__surnameFirstnamePatronymic {
+
+}
+
+.userList__row .userList__role {
+    
+}
+
+.userList__row .userList__userEnabled {
+    
+}
+
+.userList__row .userList__userDisabled {
+    
+}

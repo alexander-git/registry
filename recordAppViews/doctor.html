@@ -1,0 +1,11 @@
+<div ng-if="doctors.length === 0">
+   Не найдено ни одного врача.
+</div>
+<div ng-if="doctors.length !== 0">
+    <div ng-repeat="d in doctors" class="selectableItemWrapper">
+        <a ng-href="{{d | doctorUrl}}" ng-click="selectDoctor(d)" class="selectableItem -darkAzure -darkAzure--action -roundedCorners">
+            {{d | fullDoctorName }}
+        </a>
+        <div class="-stopFloat"></div>
+    </div>
+</div>

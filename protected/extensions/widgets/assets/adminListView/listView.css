@@ -1,0 +1,185 @@
+/* 
+    Пока сделано так, что элементы связанные с ajax(listViewAjaxInfo) отображаются 
+    вне виджета СListView и соответственно в js коде селекторы не зависят от id CListView
+    и являются глобальными. Поэтому элементы из listViewAjaxInfo должны быть 
+    на странице только в одном экземпляре.
+*/
+
+.listViewAjaxInfo {
+    
+}
+
+.listViewAjaxInfo .listViewAjaxInfo__process {
+    padding : 0px;
+    margin : 0px;
+    text-align : left;
+    visibility : hidden;
+    text-align : center;
+}
+
+.listViewAjaxInfo .listViewAjaxInfo__errorMessage {
+    padding-top : 5px;
+    padding-bottom : 15px;
+    font-size : 20px;
+}
+
+/******************************************************************************/
+
+.listView {
+ 
+}
+
+.listView .listView__sorter {
+    padding : 15px;
+    margin-bottom : 15px;
+    text-align : left;
+    font-size : 17px;
+}
+
+.listView .listView__sorter ul,
+.listView .listView__sorter ul li {
+    display : inline;
+    padding : 0px;
+}
+
+.listView .listView__sorter ul { 
+    list-style-type : none;
+    font-size : 17px;
+}
+
+.listView .listView__sorter ul li {
+    margin-right : 5px;
+    margin-left  : 5px;
+}
+
+.listView .listView__sorter ul li a {
+   
+}
+
+.listView .listView__sorter ul li a.asc {
+	background : url(up.gif) right center no-repeat;
+	padding-right : 22px;
+}
+
+.listView .listView__sorter ul li a.desc {
+	background : url(down.gif) right center no-repeat;
+	padding-right : 22px;
+}
+
+.listView .listView__pager  {
+    padding : 15px;
+    text-align : left;
+    font-size : 17px;
+    margin-bottom : 15px;
+}
+
+.listView__items .empty {
+    padding : 15px;
+    font-size : 18px;
+    text-align : left;
+}
+
+.listView__items .listView__item {
+    
+}
+
+/*
+    Можно использовать, если требуется единообразие отображения элементов
+    разных списков.
+*/
+.listView__items .listView__item--standard {
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+   
+    font-size : 16px;
+    margin-bottom : 12px;
+    margin-top : 0px;
+}
+
+/*--------------------------------------*/
+
+.listView .listView__linkPanel {
+    padding : 15px;
+    margin-bottom : 15px;
+    text-align : left;
+    font-size : 17px;
+}
+
+.listView__linkPanel  ul, 
+.listView__linkPanel ul li {
+    display : inline;
+    padding : 0px;
+}
+
+.listView__linkPanel ul {
+    list-style-type : none;
+    font-size : 17px;
+}
+
+.listView__linkPanel ul li {
+    
+}
+
+.listView__linkPanel ul li a {
+    
+}
+
+/*--------------------------------------*/
+
+.listView .listView__filterPanel {
+    padding : 15px;
+    margin-bottom : 15px;
+    text-align : left;
+    font-size : 17px;
+}
+
+
+.listView__filterPanel .listView__filterPanelElement {
+    margin-right : 15px;
+}
+
+.listView__filterPanelElement .listView__filterPanelLabel {
+    margin-right : 2px;
+}
+
+/*--------------------------------------*/
+
+.listView__filterPanel--usingCyanInputItems {
+    
+}
+
+.listView__filterPanel--usingBlueInputItems select.inputItem {
+    color : #E0EFEF;;
+    font-size : 15px;
+    
+    background-color : #27A0C9;
+    border-color : #27A0C9;
+}
+
+.listView__filterPanel--usingBlueInputItems span.selectWrapper {
+    color : #E0EFEF;;
+    background-color : #27A0C9;
+    border-color : #27A0C9;
+   
+}
+
+.listView__filterPanel--usingBlueInputItems input[type="button"].inputItem {
+    color : #E0EFEF;;
+    font-size : 15px;
+    background-color : #27A0C9;
+    border-color : #27A0C9;
+}
+
+.listView__filterPanel--usingBlueInputItems input[type="button"].inputItem:hover {
+    background-color : #00607A;
+    border-color : #00607A; 
+}
+
+/******************************************************************************/
+
+.list-view-loading {
+
+}
+

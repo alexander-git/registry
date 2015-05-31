@@ -1,0 +1,11 @@
+<div ng-if="groups.length === 0">
+   Не найдено ни одной категории.
+</div>
+<div ng-if="groups.length !== 0">
+    <div ng-repeat="g in groups" class="selectableItemWrapper">
+        <a ng-href="{{g | groupUrl}}" ng-click="selectGroup(g)" class="selectableItem -darkAzure -darkAzure--action -roundedCorners">
+            {{g.name}}
+        </a>
+        <div class="-stopFloat"></div>
+    </div>
+</div>

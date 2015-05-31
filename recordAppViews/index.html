@@ -1,0 +1,39 @@
+<div class="loading -azure" ng-show="isNeedShowLoading"> </div>
+<table class="content">
+    <tr>
+        <td class="content__left">       
+            <div class="navigation" ng-controller="NavigationController">
+                <div>
+                    <div ng-if="navigationItems.length > 0" class="navigation__button navigation__button--enabled -darkAzure -darkAzure--action -roundedCorners -floatLeft" ng-click="stepBack()">
+                        Назад
+                    </div>
+                    <div ng-if="navigationItems.length === 0" class="navigation__button navigation__button--disabled -azure -azure--disabledAction -roundedCorners -floatLeft">
+                        Назад
+                    </div>
+                    <div class="navigation__button navigation__button--enabled -darkAzure -darkAzure--action -roundedCorners -floatRight" ng-click="goToBeginning()">
+                        К началу
+                    </div>
+                    <br />
+                    <div class="-stopFloat"> </div>
+                </div>
+                
+                <div class="navigation__itmes -marginTop15">
+                    <a ng-repeat="navigationItem in navigationItems" class="navigation__item -darkAzure -darkAzure--action -roundedCorners -marginBottom10" ng-href ="{{navigationItem.href}}">
+                        <span class="navigation__itemNumber">{{$index + 1}}</span>
+                        <span class="navigation__itemText">{{navigationItem.text}}</span>
+                    </a> 
+                </div>
+            </div>
+        </td>
+        <td class="content__right">
+            <div class="workArea">
+                <div class="workArea__caption -azure -roundedCornersTop">
+                    {{workAreaCaption}}
+                </div>
+                <!--$route.current.workAreaContentUrl-->
+                <div class="workArea__info -blue -roundedCornersBottom" ng-include="$route.current.workAreaContentUrl">
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>

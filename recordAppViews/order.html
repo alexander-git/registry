@@ -1,0 +1,151 @@
+<div ng-show="!isNeedShowOrderForm">
+    <div ng-show="workTime.state === 'busy'">
+        К сожалению это время уже занято.
+    </div>
+    <div ng-show="workTime.state === 'recordImpossible'">
+        Запись на это время через интернет невозможна.
+    </div>
+</div>
+
+<form ng-show="isNeedShowOrderForm" name="orderForm" novalidate ng-controller="OrderFormController" class="orderForm orderForm--usingInputItems">
+    <div class="orderForm__row">
+        <div class="orderForm__leftColumn">
+            Фамилия <span class="orderForm__requiredLabel">*</span> :
+        </div>
+        <div class="orderForm__rightColumn">
+            <div>
+                <input type="text" ng-model="surname" required ng-pattern="namePartPattern" ng-maxlength="namePartMaxLength" name="surname" autocomplete= "off" class="inputItem">
+            </div>
+            <div ng-show="showError(orderForm.surname, 'required')" class="orderForm__inputError -errorMessage">
+                Нужно ввести фамилию.
+            </div>
+            <div ng-show="showError(orderForm.surname, 'pattern')" class="orderForm__inputError -errorMessage">
+                Недопустимая фамилия.
+            </div>
+            <div ng-show="showError(orderForm.surname, 'maxlength')" class="orderForm__inputError -errorMessage">
+                Фамилия слишком длинная.
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow"></div>
+    
+    <div class="orderForm__row">
+        <div class="orderForm__leftColumn">
+            Имя <span class="orderForm__requiredLabel">*</span> :
+        </div>
+        <div class="orderForm__rightColumn">
+            <div>
+                <input type="text" ng-model="firstname" required ng-pattern="namePartPattern" ng-maxlength="namePartMaxLength" name="firstname" autocomplete= "off" class="inputItem">
+            </div>
+            <div ng-show="showError(orderForm.firstname, 'required')" class="orderForm__inputError -errorMessage">
+                Нужно ввести имя.
+            </div>
+            <div ng-show="showError(orderForm.firstname, 'pattern')" class="orderForm__inputError -errorMessage">
+                Недопустимое имя.
+            </div>
+            <div ng-show="showError(orderForm.firstname, 'maxlength')" class="orderForm__inputError -errorMessage">
+                Имя слишком длинное.
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow"></div>
+    
+    <div class="orderForm__row">
+        <div class="orderForm__leftColumn">
+            Отчество :
+        </div>
+        <div class="orderForm__rightColumn">
+            <div>
+                <input type="text" ng-model="patronymic" ng-pattern="namePartPattern" ng-maxlength="namePartMaxLength" name="patronymic" autocomplete= "off" class="inputItem">
+            </div>
+            <div ng-show="showError(orderForm.patronymic, 'pattern')" class="orderForm__inputError -errorMessage">
+                Недопустимое отчество.
+            </div>
+            <div ng-show="showError(orderForm.patronymic, 'maxlength')" class="orderForm__inputError -errorMessage">
+                Отчество слишком длинное.
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow"></div>
+    
+    <div class="orderForm__row">
+        <div class="orderForm__leftColumn">
+            Телефон <span class="orderForm__requiredLabel">*</span> :
+        </div>
+        <div class="orderForm__rightColumn">
+            <div>
+                <input type="text" ng-model="phone" required ng-pattern="phonePattern" ng-maxlength="phoneMaxLength" name="phone" autocomplete= "off" class="inputItem">
+            </div>
+            <div ng-show="showError(orderForm.phone, 'required')" class="orderForm__inputError -errorMessage">
+                Нужно ввести номер телефона.
+            </div>
+            <div ng-show="showError(orderForm.phone, 'pattern')" class="orderForm__inputError -errorMessage">
+                Телефон должен содержать только цыфры.
+            </div>
+            <div ng-show="showError(orderForm.phone, 'maxlength')" class="orderForm__inputError -errorMessage">
+                Номер телефон слишком длинный.
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow"></div>
+    
+    <div class="orderForm__row">
+        <div class="orderForm__leftColumn">
+             Введите код с картинки <span class="orderForm__requiredLabel">*</span> : 
+        </div>
+        <div class="orderForm__rightColumn">
+            <div>
+                <input type="text" ng-model="captchaCode" required name="captchaCode" autocomplete= "off" class="inputItem">
+            </div>
+            <div class="-floatLeft -marginTop15 -roundedCorners -padding10" style="background-color : #FFF;">
+                <img ng-src="{{captchaUrl}}" /><img src="/images/refresh.gif" title="Другой код" ng-click="refreshCaptcha()" style="cursor : pointer; height : 50px;" />
+            </div>
+            <div class="-stopFloat"></div>
+            <div ng-show="isCaptchaRefreshErrorOccurred" class="orderForm__inputError -errorMessage">
+                Произошла ошибка
+            </div>
+            <div ng-show="showError(orderForm.captchaCode, 'required')" class="orderForm__inputError -errorMessage">
+                Нужно ввести код с картинки.
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow"></div>
+    
+    <div class="orderForm__row">
+        <div class="orderForm__leftColumn">
+            &nbsp;
+        </div>
+        <div class="orderForm__rightColumn">
+            <button ng-click="submitForm()" ng-disabled="!isCanSubmitForm()" class="inputItem -darkAzure -darkAzure--action -marginTop10">Отправить</button>
+        </div>
+    </div>
+    <div class="orderForm__afterRow"></div>
+    
+    
+    <div class="orderForm__row" ng-show="isNeedShowProcess">
+        <div class="orderForm__leftColumn">
+            &nbsp;
+        </div>
+        <div class="orderForm__rightColumn">
+            <div >
+                <img src="/images/loadingLine.gif" style="height : 19px; width : 180px;">
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow" ng-show="isNeedShowProcess"></div>
+    
+    <div class="orderForm__row" ng-show="isNeedShowError">
+        <div class="orderForm__leftColumn">
+            &nbsp;
+        </div>
+        <div class="orderForm__rightColumn">
+            <div class="closeableItem closeableItem--error closeableItem--width380">
+                <div class="closableItem__closeButton" ng-click="hideErrorMessage()"> </div>
+                <div class="closableItem__content">
+                    <div ng-bind-html="errorMessage"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orderForm__afterRow" ng-show="isNeedShowError"></div>
+</form>

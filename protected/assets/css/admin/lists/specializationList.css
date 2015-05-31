@@ -1,0 +1,58 @@
+.specializationList {
+    
+}
+
+.specializationList__listItem {
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+   
+    font-size : 16px;
+    margin-bottom : 12px;
+    margin-top : 0px;
+}
+
+.specializationList__listItem .specializationList__row {
+    margin-bottom : 3px;
+}
+
+.specializationList__row .specializationList__name {
+
+}
+
+.specializationList__row .specializationList__name a {
+    font-size : 18px;
+}
+
+.specializationList__row .specializationList__additional  {
+    
+}
+
+.specializationList__row .specializationList__specializationEnabled {
+    
+}
+
+.specializationList__row .specializationList__specializationDisabled {
+    
+}
+
+.specializationList__row .specializationList__needDoctor {
+    
+}
+
+.specializationList__row .specializationList__recordOnTime {
+    
+}
+
+.specializationList__row .specializationList__provisionalRecord {
+    
+}
+
+.specializationList__row .specializationList__group {
+    
+}
+
+.specializationList__row .specializationList__doctors {
+    
+}

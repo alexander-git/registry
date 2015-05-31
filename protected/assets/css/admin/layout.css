@@ -1,0 +1,37 @@
+.body {
+    background-color : #C8E3E9;
+    padding-bottom : 20px; /* Чтобы адресс сылки не загораживал нужную информацию */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    width : 1050px;
+    margin : auto;
+}
+
+.layout .layout__header {
+    
+}
+
+.layout .layout__content {
+    
+}
+
+.layout .layout__content--usingTwoColumns {
+    
+}
+
+.layout__content--usingTwoColumns .layout__leftColumn {
+    float : left; 
+    width : 70%
+}
+
+.layout__content--usingTwoColumns .layout__rightColumn {
+    float : left;
+    width : 30%;
+}
+

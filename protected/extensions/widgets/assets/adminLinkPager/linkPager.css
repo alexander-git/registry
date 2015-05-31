@@ -1,0 +1,96 @@
+ ul.linkPager {
+    display : inline;
+    padding : 0px;
+    margin : 0px;   
+}
+
+ul.linkPager li {
+    display : inline;
+    
+    margin-left : 0px;
+    margin-right : 0px;
+    
+    padding : 0px;
+}
+
+
+ul.linkPager li:hover {
+
+}
+
+ul.linkPager li a:hover {
+    
+}
+
+ul.linkPager li.first {
+    
+}
+
+ul.linkPager li.last {
+    
+}
+
+ul.linkPager li.next {
+    
+}
+
+ul.linkPager li.previous {
+    
+}
+
+ul.linkPager li.page {
+    
+}
+
+ul.linkPager li a {
+    display : inline;
+    
+    padding : 8px;
+    
+    margin-left : 0px;
+    margin-right : 0px;
+}
+
+
+ul.linkPager li.selected {
+  
+}
+
+ul.linkPager li.selected a {
+
+}
+
+ul.linkPager li.hidden {
+    display : none;
+}
+
+/******************************************************************************/
+/* linkPager--blue */
+
+ul.linkPager--blue {
+    font-size : 17px;
+}
+
+ul.linkPager--blue li {
+    background-color : #33A3C9;
+}
+
+ul.linkPager--blue li:hover {
+    background-color : #00607A;   
+}
+
+ul.linkPager--blue li a {
+    color : #E0EFEF;
+    text-decoration : none;
+}
+
+ul.linkPager--blue li.selected {
+    background-color : #D4EFEF;  
+}
+
+ul.linkPager--blue li.selected a {
+   color : #145;
+}
+
+/* end linkPager--blue */
+

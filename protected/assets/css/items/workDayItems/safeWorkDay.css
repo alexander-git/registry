@@ -1,0 +1,64 @@
+/******************************************************************************/
+.safeWorkDay {
+    font-size : 18px;
+}
+
+/******************************************************************************/
+
+.safeWorkDay .safeWorkDay__process {
+    
+}
+
+.safeWorkDay .safeWorkDay__infoMessage {
+    
+}
+
+.safeWorkDay .safeWorkDay__errorMessage {
+    
+}
+
+.safeWorkDay .safeWorkDay__dayIsNotExistsMessage {
+    font-size : 21px;
+}
+
+/******************************************************************************/
+.safeWorkDay .safeWorkDay__generalInfo {
+    font-size : 21px;
+}
+
+.safeWorkDay__generalInfo .safeWorkDay__date {
+   
+}
+
+.safeWorkDay__generalInfo .safeWorkDay__specializationName {
+    
+}
+
+.safeWorkDay__generalInfo .safeWorkDay__doctorInfo {
+
+}
+
+.safeWorkDay__doctorInfo .safeWorkDay__doctorName {
+    
+}
+
+.safeWorkDay__generalInfo .safeWorkDay__publishedInfo {
+    
+}
+
+.safeWorkDay .safeWorkDay__published {
+    
+}
+
+/******************************************************************************/
+.safeWorkDay__nextButton {
+    cursor : pointer;
+}
+
+.safeWorkDay__previousButton {
+    cursor : pointer;
+}
+
+.safeWorkDay__quitButton {
+    cursor : pointer;
+}

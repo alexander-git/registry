@@ -1,0 +1,37 @@
+.templateWorkDay {
+    font-size : 18px;
+}
+
+/******************************************************************************/
+
+.templateWorkDay .templateWorkDay__process {
+    
+}
+
+.templateWorkDay .templateWorkDay__infoMessage {
+    
+}
+
+.templateWorkDay .templateWorkDay__errorMessage {
+    
+}
+
+.templateWorkDay .templateWorkDay__templateIsNotExistsMessage {
+    font-size : 21px;
+}
+
+/******************************************************************************/
+.templateWorkDay .templateWorkDay__generalInfo {
+    font-size : 21px;
+}
+
+.templateWorkDay__generalInfo .templateWorkDay__templateName {
+   
+}
+
+
+/******************************************************************************/
+
+.templateWorkDay__quitButton {
+    
+}

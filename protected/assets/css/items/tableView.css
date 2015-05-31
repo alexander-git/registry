@@ -1,0 +1,153 @@
+.tableView{
+    width : 100%;
+}
+
+.tableView__row {
+  
+}
+
+.-tableView--cellParameters,
+.tableView__row td,
+.tableView__row th {
+    padding : 5px;
+    font-size : 18px;   
+}
+
+.tableView__row th {
+    width : 230px;
+    
+    text-align : left;
+    font-weight : normal;
+    padding-left : 20px;
+}
+
+.tableView__row td {
+    text-align : left;
+    padding-left : 10px;
+}
+
+/* Левая верхняя ячейка */
+.tableView__row:first-child th {
+   
+}
+
+/* Правая верхняя ячейка */
+.tableView__row:first-child td {
+
+}
+
+/* Левая нижняя ячейка */
+.tableView__row:last-child th {
+   
+}
+
+/* Правая нижняя ячейка */
+.tableView__row:last-child td {
+   
+}
+
+/******************************************************************************/
+/* tableView--bottomCenterBlueBorder */
+/* Есть грнаица между ячейками а также нижняя граница у каждой ячейки */
+.tableView--bottomCenterBlueBorder {
+    
+}
+
+.tableView--bottomCenterBlueBorder .tableView__row  th {
+    border-right : 3px solid #33A7CF;
+    border-bottom : 3px solid #33A7CF; 
+}
+
+.tableView--bottomCenterBlueBorder .tableView__row  td {
+    border-bottom : 3px solid #33A7CF;
+}
+/* end tableView--bottomCenterBlueBorder */
+
+
+/******************************************************************************/
+/* tableView--innerBlueBorder */
+/* Есть внутренние границы */
+.tableView--innerBlueBorder {
+    
+}
+
+.tableView--innerBlueBorder .tableView__row th {
+    border-right : 3px solid #33A7CF;
+    border-bottom : 3px solid #33A7CF; 
+}
+
+.tableView--innerBlueBorder .tableView__row td {
+    border-bottom : 3px solid #33A7CF;
+}
+
+/* Левая нижняя ячейка */
+.tableView--innerBlueBorder  .tableView__row:last-child th {
+    border-bottom : none;
+}
+
+/* Правая нижняя ячейка */
+.tableView--innerBlueBorder  .tableView__row:last-child td {
+    border-bottom : none;
+}
+/* end tableView--innerBlueBorder */
+
+/******************************************************************************/
+/* tableView--roundedCorners */
+/* Скруглённые уголки у всей таблицы */
+
+.tableView--roundedCorners {
+    
+}
+
+/* Левая верхняя ячейка */
+.tableView--roundedCorners .tableView__row:first-child th {
+   border-top-left-radius :  10px; 
+}
+
+/* Правая верхняя ячейка */
+.tableView--roundedCorners .tableView__row:first-child td {
+    border-top-right-radius: 10px;
+}
+
+/* Левая нижняя ячейка */
+.tableView--roundedCorners .tableView__row:last-child th {
+   border-bottom-left-radius:  10px;
+}
+
+/* Правая нижняя ячейка */
+.tableView--roundedCorners .tableView__row:last-child td {
+   border-bottom-right-radius :  10px; 
+}
+
+/* end tableView--roundedCorners*/
+
+
+/******************************************************************************/
+/* tableView--interleavingCellColor */
+/* Разный цвет у чётных и нечётных строк */
+.tableView--interleavingCellColor {
+    
+}
+
+.tableView--interleavingCellColor .tableView__row--even th {
+    color : #122;
+    background-color : #8ACADA;
+}
+
+.tableView--interleavingCellColor .tableView__row--even td {
+    color : #122;
+    background-color : #8ACADA;
+}
+
+.tableView--interleavingCellColor .tableView__row--odd th {
+    color : #000;
+    background-color : #D4EFEF;
+}
+
+.tableView--interleavingCellColor .tableView__row--odd td {
+    color : #000;
+    background-color : #D4EFEF;
+}
+
+
+/* end tableView--interleavingCellColor */

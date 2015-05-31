@@ -1,0 +1,320 @@
+.scheduleDatesStore {
+    
+}
+
+.scheduleDatesStore .scheduleDatesStore__item {
+    
+}
+
+.scheduleDatesStore__item .scheduleDatesStore__dateNumber {
+    
+}
+
+/******************************************************************************/
+
+.scheduleLoadingProcess {
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+.scheduleErrorMessage {
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-bottom : 10px;
+    
+    font-size : 18px;
+}
+
+/******************************************************************************/
+.scheduleExplanation {
+    
+}
+
+.scheduleExplanation .scheduleExplanation__symbol {
+    width : 20px;
+    border : 2px solid #33A7CF; 
+    
+    text-align : center; 
+    text-align : center;  
+    font-size : 20px;
+    font-weight : bold;
+}
+
+.scheduleExplanation .scheduleExplanation__description {
+    padding-left : 5px;
+    padding-right : 5px;
+}
+
+/* .scheduleTable*/
+/******************************************************************************/
+.scheduleTable {
+    border-collapse : collapse;
+    width : 100%;
+}
+
+.scheduleTable th,
+.scheduleTable td {    
+    padding : 3px;
+    border : 2px solid #33A7CF; 
+    font-size : 15px;
+}
+
+.scheduleTable th.scheduleTable__dateHead {
+    width : 20px;
+}
+
+.scheduleTable td.scheduleTable__groupName {
+    
+}
+
+.scheduleTable td.scheduleTable__specializationName {
+    
+}
+
+.scheduleTable td.scheduleTable__doctorName {
+    width : 230px;
+}
+
+/******************************************************************************/
+
+.scheduleTable td.scheduleTable__groupName .scheduleTable__rowInfoStore {
+    
+}
+
+.scheduleTable__rowInfoStore .scheduleTable__idSpecializationStore {
+    
+}
+
+.scheduleTable__rowInfoStore .scheduleTable__specializationNameStore {
+    
+}
+
+.scheduleTable__rowInfoStore .scheduleTable__idDoctorStore {
+    
+}
+
+.scheduleTable__rowInfoStore .scheduleTable__doctorNameStore {
+    
+}
+
+/******************************************************************************/
+
+.scheduleTable .sheduleTable__selectableCell {
+    text-align : center;  
+    font-size : 20px;
+    font-weight : bold;
+}
+
+
+.scheduleTable .sheduleTable__selectableCell--selected {
+    background-color : #60BAC6; 
+}
+
+.sheduleTable__selectableCell .scheduleTable__cellStateView {
+    
+}
+
+/******************************************************************************/
+
+.sheduleTable__selectableCell .scheduleTable__cellInfoStore {
+    
+}
+
+.scheduleTable__cellInfoStore  .scheduleTable__idWorkDayStore  {
+    
+}
+
+.scheduleTable__cellInfoStore  .scheduleTable__stateStore  {
+    
+}
+
+.scheduleTable__cellInfoStore .scheduleTable__dateNumberStore {
+    
+}
+
+.scheduleTable__cellInfoStore .scheduleTable__rowStore {
+    
+}
+
+.scheduleTable__cellInfoStore .scheduleTable__colStore {
+    
+}
+
+/* .scheduleControlPanel*/
+/******************************************************************************/
+.scheduleControlPanel {
+
+}
+
+/* .scheduleControlPanel__instuments */
+/******************************************************************************/
+.scheduleControlPanel .scheduleControlPanel__instuments {
+    
+}
+
+.scheduleControlPanel__instuments .scheduleControlPanel__selectTemplateWorkDayInput {
+
+}
+
+.scheduleControlPanel__instuments .scheduleControlPanel__selectTemplateWorkDayInput[readonly="readonly"]{
+    background-color : #D0E7EC;
+    border : 2px solid #8ACADA;
+    border-radius : 0px 0px 0px 0px;
+    
+    display : inline-block;
+    float : left;
+    height : 16px; // 16 + 2*2(border) + 2*5(padding) = 30 
+}
+    
+/* .scheduleControlPanel__groupButtons */
+.scheduleControlPanel__instuments .scheduleControlPanel__groupButtons {
+    float : left;
+    margin-right : 35px;
+}
+    
+
+.scheduleControlPanel__groupButtons span {
+    display : inline-block;
+    width : 30px;
+    height : 30px;
+    cursor : pointer;
+
+    margin-right : 3px;
+}
+ 
+.scheduleControlPanel__groupButtons span.-active {
+
+} 
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__normalModeButton {
+    background-image : url('scheduleImages/arrow.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__cellSelectDeselectButton {
+    background-image : url('scheduleImages/cellSelect.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__areaSelectButton {
+    background-image : url('scheduleImages/areaSelect.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__areaDeselectButton {
+    background-image : url('scheduleImages/areaDeselect.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__completelyDeselectButton {
+    background-image : url('scheduleImages/completelyDeselect.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__safeUpdateDayButton {
+    background-image : url('scheduleImages/daySchedule.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__createUpdateDayButton {
+    background-image : url('scheduleImages/pencil.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__deleteDayButton {
+    background-image : url('scheduleImages/delete.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__publishDepublishDayButton {
+    background-image : url('scheduleImages/semiOpenLock.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__deleteSelectedButton {
+    background-image : url('scheduleImages/deleteSelected.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__publishSelectedButton {
+    background-image : url('scheduleImages/openLockSelected.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__depublishSelectedButton {
+    background-image : url('scheduleImages/closedLockSelected.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__viewTemplateWorkDayButton {
+    background-image : url('scheduleImages/magnifier.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+    float : left; /* Чтобы поместить перед scheduleControlPanel__selectTemplateWorkDayInput */
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__selectTemplateWorkDayButton {
+    background-image : url('scheduleImages/threePoints.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+    margin-right : 0px;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__clearTemplateWorkDayButton {
+    background-image : url('scheduleImages/cross.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.scheduleControlPanel__groupButtons span.scheduleControlPanel__acceptTemplateWorkDayToSelectedButton {
+    background-image : url('scheduleImages/templateSelected.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+    
+}
+
+/* .scheduleControlPanel__dateChanger*/
+/******************************************************************************/
+
+.scheduleControlPanel .scheduleControlPanel__dateChanger {
+    text-align : right; 
+    padding-right : 5px;
+}
+
+.scheduleControlPanel__dateChanger .scheduleControlPanel__dateInterval {
+    display : inline-block;
+    margin-left : 7px;
+    margin-right : 7px;
+}
+
+.scheduleControlPanel__dateChanger .scheduleControlPanel__nextDateButton,
+.scheduleControlPanel__dateChanger .scheduleControlPanel__prevDateButton {
+    font-size : 14px;
+}
+
+/* .scheduleControlPanel__dateJump*/
+/******************************************************************************/
+.scheduleControlPanel .scheduleControlPanel__dateJump {
+    text-align : left;
+    padding-left : 5px;
+}
+
+.scheduleControlPanel__dateJump  .scheduleControlPanel__jumpDateInputField {
+    
+}
+
+.scheduleControlPanel__dateJump .scheduleControlPanel__jumpDateButton {
+    font-size : 14px;
+}

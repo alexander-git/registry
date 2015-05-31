@@ -1,0 +1,19 @@
+.removableItem {
+    font-size : 18px;
+    margin : 0px;
+    margin-bottom : 7px;
+}
+
+.removableItem .removableItem__info,
+.removableItem .removableItem__remove {
+    display : inline-block;
+    padding : 5px;
+    padding-left : 7px;
+    padding-right : 7px;
+    margin : 0px;
+}
+
+.removableItem .removableItem__remove {
+    cursor : pointer;
+    margin-left : -5px; 
+}

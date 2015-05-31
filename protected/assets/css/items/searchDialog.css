@@ -1,0 +1,48 @@
+.searchDialog {
+    
+}
+
+.searchDialog .searchDialog__inputPanel {
+    
+}
+
+.searchDialog__inputPanel .searchDialog__textToSearch {
+    
+}
+
+.searchDialog__inputPanel .searchDialog__searchButton {
+    
+}
+
+.searchDialog__inputPanel .searchDialog__showAllButton {
+    
+}
+
+.searchDialog .searchDialog__process {
+    
+}
+
+.searchDialog .searchDialog__nothingIsFound {
+    font-size : 18px;
+}
+
+.searchDialog .searchDialog__resultPanel {
+    
+}
+
+.searchDialog__resultPanel select {
+    display : block;
+    width : 100%;
+}
+
+.searchDialog .searchDialog__errorMessage {
+    
+}
+
+.searchDialog .searchDialog__selectButton {
+    
+}
+
+.searchDialog .searchDialog__quitButton {
+    
+}

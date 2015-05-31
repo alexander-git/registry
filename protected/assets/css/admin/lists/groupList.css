@@ -1,0 +1,36 @@
+.gruopList {
+    
+}
+
+.groupList__listItem {
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+   
+    font-size : 16px;
+    margin-bottom : 12px;
+    margin-top : 0px;
+}
+
+.groupList__listItem .groupList__row {
+    margin-bottom : 3px;
+}
+
+.groupList__row .groupList__name {
+
+}
+
+.groupList__row .groupList__name a {
+    font-size : 18px;
+}
+
+
+.groupList__row .groupList__groupEnabled {
+    
+}
+
+.groupList__row .groupList__groupDisabled {
+    
+}
+

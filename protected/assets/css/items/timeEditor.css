@@ -1,0 +1,159 @@
+ .-timeEditor--timeFree,
+ .-timeEditor--timeBusy {
+    color : #FFF;
+ }
+ 
+ .-timeEditor--recordImpossible {
+    color : #FFF;
+ }
+
+.-timeEditor--timeFree {
+    background-color : #209000;
+}
+
+.-timeEditor--timeBusy {
+    background-color : #B02030;
+}
+
+.-timeEditor--recordImpossible {
+    background-color : #C7B700;
+}
+
+/******************************************************************************/
+.timeEditor {
+    font-size : 18px;
+}
+
+/******************************************************************************/
+
+.timeEditor  .timeEditor__timeItemTemplate {
+    
+}
+
+/******************************************************************************/
+.timeEditor .timeEditor__inputPanel {
+    
+}
+
+.timeEditor__inputPanel .timeEditor__intervalBegin {
+    
+} 
+
+.timeEditor__inputPanel .timeEditor__intervalEnd {
+    
+} 
+
+.timeEditor__inputPanel .timeEditor__intervalDuration {
+    
+} 
+
+.timeEditor__inputPanel .timeEditor__addIntervalButton  {
+    
+} 
+
+.timeEditor__inputPanel .timeEditor__singleTime {
+    
+}
+
+.timeEditor__inputPanel .timeEditor__addSingleTimeButton {
+    
+}
+
+.timeEditor__inputPanel .timeEditor__itervalInputErrorMessage {
+    
+}
+
+/******************************************************************************/
+.timeEditor .timeEditor__timePanel {
+  
+}
+
+.timeEditor__timePanel .timeEditor__initialTimeItems {
+    
+}
+
+.timeEditor__timePanel .timeEditor__timeItemsConvertedToInputs {
+    
+}
+
+.timeEditor__timePanel .timeEditor__time {
+    width : 380px;
+    float : left;
+    height : 250px;
+    overflow : auto;
+}
+
+.timeEditor__timePanel .timeEditor__timeInstruments {
+    float : left;
+    margin-left : 20px;
+}
+
+.timeEditor__time .timeEditor__timeItem {
+    float : left;
+    width : 100px;
+   
+    
+    padding : 5px;
+    margin-right : 5px;
+    margin-bottom : 5px;
+    
+    font-size : 18px;
+    text-align : center;
+}
+ 	
+/******************************************************************************/
+.timeEditor__timeInstruments span {
+    display : inline-block;
+    width : 30px;
+    height : 30px;
+}
+
+.timeEditor__timeInstruments span.-active {
+    
+} 
+
+.timeEditor__timeInstruments--decorateButtons span {
+    cursor : pointer;
+}
+
+/*
+    margin = ((timeEditor__timeInstruments span).width - width )/ 2)
+    (30 - 16) / 2 = 14 /2 = 7;
+*/
+.timeEditor__timeInstruments div.timeEditor__buttonColor {
+    display : inline-block;
+    width : 16px;
+    height : 16px;
+    margin : 7px;
+}
+
+.timeEditor__timeInstruments span.timeEditor__normalModeButton { 
+    background-image : url('timeEditorImages/arrow.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+      
+}
+
+.timeEditor__timeInstruments span.timeEditor__freeButton {
+
+}
+
+.timeEditor__timeInstruments span.timeEditor__busyButton {
+
+}
+
+.timeEditor__timeInstruments span.timeEditor__recordImpossibleButton {
+
+}
+
+.timeEditor__timeInstruments span.timeEditor__deleteButton {
+    background-image : url('timeEditorImages/delete.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat; 
+}
+
+.timeEditor__timeInstruments div.timeEditor__buttonCaption {
+    padding-left : 10px;
+}
+
+/******************************************************************************/

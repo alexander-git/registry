@@ -1,0 +1,423 @@
+.header {
+    padding-top : 20px;
+    padding-bottom : 20px;
+    padding-left : 20px;
+    padding-right : 20px;
+}
+
+.header .header__caption {
+    float : left;
+    font-size : 23px;
+    text-align : left;
+}
+
+.header__caption a {
+    text-decoration : none;
+    color : #EFF;
+}
+
+.header .header__currentDateTime {
+    float : right;
+    font-size : 23px;
+    text-align : right;
+}
+
+/******************************************************************************/
+
+.userPanel {
+    float : right;
+    padding : 10px;
+}
+
+.userPanel .userPanel__admin {
+    float : right;
+    text-align : right;
+    margin-right : 10px;
+}
+
+.userPanel .userPanel__logout {
+    float : right;
+    text-align : right;
+}
+
+.userPanel__admin a,
+.userPanel__logout a {
+    font-size : 18px;
+    text-decoration : underline;
+    color : #EFF;
+}
+
+/******************************************************************************/
+
+.content {
+    margin-top : 15px;
+    width : 100%;
+    border-spacing:  0px;
+}
+
+.content .content__left {
+    width : 280px;
+    vertical-align : top;
+    padding-right : 20px;
+}
+
+.content .content__right {
+    vertical-align : top;
+}
+
+/******************************************************************************/
+
+.navigation {
+
+}
+
+.navigation .navigation__button {
+    width : 120px;
+    padding : 5px;
+    margin : 0px;
+
+    font-size : 20px;
+    text-align : center; 
+}
+
+.navigation .navigation__button--enabled {
+    cursor : pointer;
+}
+
+.navigation .navigation__button--disabled { 
+    cursor : default;
+}
+
+.navigation .navigation__itmes {
+    
+}
+
+.navigation__itmes a.navigation__item {
+    display : block;
+    padding : 15px;
+    
+    font-size : 20px;
+    text-decoration : none;
+    cursor : pointer;  
+}
+
+.navigation__itmes a.navigation__item:hover {
+    
+}
+
+.navigation__item .navigation__itemNumber {
+    margin-right : 10px;
+    font-weight : bold;
+}
+
+.navigation__item .navigation__itemText {
+    
+}
+/******************************************************************************/
+
+.selectableItemWrapper {
+    margin-bottom : 15px;
+}
+
+a.selectableItem {
+    display : block;
+    float : left;
+    margin-left : 5px;
+    padding : 10px;
+    text-decoration : none;
+}
+
+/******************************************************************************/
+
+/*
+.borderLine {
+    height : 20px;
+    background-color : #C8E3E9;
+}
+*/
+
+/******************************************************************************/
+
+.workArea {
+    
+}
+
+.workArea__caption {
+    font-size : 23px;
+    padding : 25px;
+}
+
+.workArea__info {
+    font-size : 20px;
+    padding : 15px;
+}
+
+/******************************************************************************/
+.dateChangePanel {
+    border-collapse : collapse;
+}
+
+.dateChangePanel td {
+    padding : 0px;
+    border : none;
+    
+    vertical-align : middle;
+    text-align : center;
+}
+
+
+.dateChangePanel .dateChangePanel__date {
+    padding-left : 20px;
+    padding-right : 20px;
+    text-align : center;
+}
+
+.dateChangePanel  .dateChangePanel__previousButton,
+.dateChangePanel  .dateChangePanel__nextButton {
+    display : block;
+    width : 40px;
+    height : 30px;
+    cursor : pointer;
+}
+
+.dateChangePanel  .dateChangePanel__previousButton {
+    background-image : url('images/leftButton.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.dateChangePanel  .dateChangePanel__nextButton {
+    background-image : url('images/rightButton.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+/******************************************************************************/
+
+.dayTable {
+    border-collapse : collapse;
+    padding : 0px;
+}
+
+.dayTable th, 
+.dayTable td {
+    height : 60px;
+    width : 100px;
+    padding : 0px;
+    
+    border : 3px solid #33A7CF;
+}
+
+.dayTable th {
+    font-weight : normal;
+}
+
+
+.dayTable .dayTable__header {
+    padding : 5px;
+    font-size : 16px;
+}
+
+.dayTable .dayTable__info {
+    padding : 5px;
+    font-size : 16px;
+}
+
+
+.dayTable__header .dayTable__dayOfWeek {
+
+}
+
+.dayTable__header .dayTable__date {
+    
+}
+
+/******************************************************************************/
+
+.-fillWholeCell {
+    display : block;
+    height : 100%;
+}
+
+.-notUnderlineLinks a {
+    text-decoration : none;  
+}
+
+/******************************************************************************/
+
+.timeItems {
+    width : 320px;
+}
+
+.timeItems .timeItems__timeWrapper {
+    display : block;
+    float : left;
+    width : 70px;
+    margin : 5px;
+}
+
+.timeItems__timeWrapper .timeItems__time {
+    display : block;
+    padding : 5px;
+    
+    font-size : 20px;
+    text-align : center;
+    text-decoration : none;
+}
+
+.-timeState--free,
+.timeItems .-timeState--free {
+    color : #FFF;
+    background-color : #209000;
+}
+
+.-timeState--busy,
+.timeItems .-timeState--busy {
+    color : #FFF;
+    background-color : #B02030;
+}
+ 
+.-timeState--recordImpossible,
+.timeItems .-timeState--recordImpossible {
+    color : #FFF;
+    background-color : #C7B700;
+}
+
+/******************************************************************************/
+
+.timeExplanations {
+    border-collapse : collapse;
+    padding : 0px;
+}
+
+.timeExplanations td {
+    padding : 5px;
+    border : none;
+    vertical-align : middle;
+    text-align : left;
+}
+
+.timeExplanations .timeExplanations__timeState {
+    width : 30px;
+    height : 30px;  
+}
+
+/******************************************************************************/
+
+.orderForm {
+    
+}
+
+.orderForm .orderForm__requiredLabel {
+   margin-left : -3px;
+}
+
+.orderForm .orderForm__row {
+    margin-bottom : 10px;
+}
+
+.orderForm .orderForm__inputError {
+    margin-top : 10px;
+    width : 380px;
+}
+
+.orderForm__row .orderForm__leftColumn {
+    float : left;
+    width : 260px;
+     
+    padding-top : 5px;
+    padding-bottom : 5px;
+    
+    text-align : right;
+}
+
+.orderForm__row .orderForm__rightColumn {
+    margin-left : 260px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    padding-left: 10px;
+    
+    text-align : left;
+}
+
+.orderForm .orderForm__afterRow {
+    clear : both;
+}
+
+.orderForm--usingInputItems {
+    
+}
+
+.orderForm--usingInputItems input[type="text"].inputItem {
+    width : 200px;
+}
+
+.orderForm--usingInputItems input.inputItem,
+.orderForm--usingInputItems button.inputItem {
+    font-size : 16px;   
+}
+
+.orderForm--usingInputItems input[type="button"].inputItem,
+.orderForm--usingInputItems button.inputItem {
+    width : 180px;
+}
+
+.orderForm--usingInputItems button[disabled].inputItem,
+.orderForm--usingInputItems button[disabled].inputItem:hover {
+    color : #CEE;
+    background-color : #00809E;  
+    cursor : default;
+}
+
+.closeableItem {
+    padding : 0px;
+}
+
+.closeableItem .closableItem__closeButton {
+    display : block;
+    float : right;
+    width : 20px;
+    height : 20px;
+    padding : 0px;
+    padding-bottom : 1px;
+    margin : 3px;
+    cursor : pointer;
+    background-image : url('images/cross.gif');
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.closeableItem .closableItem__content {
+    padding : 5px;
+    min-height : 25px; 
+}
+
+.closeableItem--width380  {
+    width : 380px;
+}
+
+.closeableItem--error {
+    color : #FFF;
+    background-color : #E04117;
+    border : 3px solid #920;
+}
+
+.closeableItem--error .closableItem__closeButton:hover {
+    background-color : #920;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0.65;
+  z-index : 300;
+  background-image : url('images/loading.gif');
+  background-size : 300px 300px;
+  background-position :  center center; 
+  background-repeat : no-repeat;
+}
+
+

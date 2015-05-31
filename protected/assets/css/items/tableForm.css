@@ -1,0 +1,101 @@
+.tableForm {
+    
+}
+
+.tableForm__row {
+    margin-bottom : 18px;
+}
+
+.tableForm__row  .tableForm__leftColumn {
+    float : left;
+    margin-right : 5px;
+}
+
+.tableForm__row  .tableForm__rightColumn {
+    float : left;
+    margin-left : 5px;
+}
+
+.tableForm__label {
+    text-align : right;
+}
+
+.tableForm__label span.required {
+    margin-left : -3px;
+}
+
+.tableForm__input {
+    text-align : left;
+}
+
+.tableForm__error {
+    margin-top : 8px;
+    text-align : left;
+}
+
+/* Различные варианты компоновки строк и столбцов */
+
+/* tableForm--defaultLayout*/
+.tableForm--defaultLayout {
+    
+}
+
+.tableForm--defaultLayout .tableForm__leftColumn {
+    width : 120px;
+}
+
+.tableForm--defaultLayout .tableForm__rightColumn {
+    width : 70%;
+}
+
+
+/* tableForm--wideLeftColumnLayout*/
+.tableForm--wideLeftColumnLayout {
+    
+}
+
+.tableForm--wideLeftColumnLayout .tableForm__leftColumn {
+    width : 260px;
+}
+
+.tableForm--wideLeftColumnLayout .tableForm__rightColumn {
+    width : 50%;
+}
+
+/* Подстройка для использования элементов ввода с классами -inputItem */
+.tableForm--usingInputItems .tableForm__label {
+    padding-top : 3px;
+    font-size : 19px;
+}
+
+.tableForm--usingInputItems .inputItem {
+    font-size : 16px;
+}
+
+.tableForm--usingInputItems input[type="text"].inputItem,
+.tableForm--usingInputItems input[type="password"].inputItem {
+    width : 260px;
+}
+
+.tableForm--usingInputItems input[type="submit"].inputItem,
+.tableForm--usingInputItems input[type="button"].inputItem {
+    width : 200px;
+}
+
+/* У полей с заданной маской длинну длинну делаем минимальной(по длинне маски). */
+.tableForm--usingInputItems input[type="text"].inputItem--masked {
+    width : auto;
+}
+
+
+.tableForm--usingInputItems select.inputItem {
+    width : 265px;
+}
+
+.tableForm--usingInputItems textarea.inputItem {
+    width : 255px;
+}
+
+.tableForm--usingInputItems .tableForm__error {
+    font-size : 18px;
+}

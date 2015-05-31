@@ -1,0 +1,46 @@
+.doctorList {
+    
+}
+
+.doctorList__listItem {
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+   
+    font-size : 16px;
+    margin-bottom : 12px;
+    margin-top : 0px;
+}
+
+.doctorList__listItem .doctorList__row {
+    margin-bottom : 3px;
+}
+
+.doctorList__row .doctorList__surnameFirstnamePatronimycAdditonal {
+    
+}
+
+.doctorList__row .doctorList__surnameFirstnamePatronimycAdditonal a {
+    font-size : 18px;
+}
+
+.doctorList__surnameFirstnamePatronimycAdditonal .doctorList__additional  {
+    
+}
+
+.doctorList__row .doctorList__doctorEnabled {
+    
+}
+
+.doctorList__row .doctorList__doctorDisabled {
+    
+}
+
+.doctorList__row .doctorList__speciality {
+
+}
+
+.doctorListList__row .doctorList__specializations {
+    
+}

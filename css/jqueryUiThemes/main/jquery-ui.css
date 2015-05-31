@@ -1,0 +1,271 @@
+/* Общиее */
+
+.ui-corner-all {
+    border-radius : 10px 10px 10px 10px;
+}
+
+.ui-corner-bottom {
+    border-radius : 0px 0px 10px 10px;
+}
+
+.ui-corner-top {
+    border-radius : 10px 10px 0px 0px;
+}
+
+/*****************************************/
+
+.ui-helper-clearfix:before, 
+.ui-helper-clearfix:after { 
+    content : ""; 
+    display : table; 
+}
+
+.ui-helper-clearfix:after { 
+    clear : both;
+}
+
+.ui-helper-clearfix { 
+    zoom : 1; 
+}
+
+/*****************************************/
+
+.ui-widget-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.ui-widget-overlay { /***/
+    background-color : #183038;
+    opacity : 0.8 !important;
+}
+
+/*****************************************/
+
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+.ui-resizable-disabled .ui-resizable-handle, 
+.ui-resizable-autohide .ui-resizable-handle { 
+    display: none; 
+}
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+
+/******************************************************************************/
+
+.ui-accordion {
+      
+}
+
+.ui-accordion-header {
+    margin : 0px;
+    margin-bottom : 10px;
+    padding : 5px;
+}
+
+.ui-accordion-header:hover {
+    cursor : pointer;    
+}
+
+.ui-accordion-header a {
+    font-size : 18px; 
+    font-weight : normal;
+    text-decoration : none;
+}
+
+
+.ui-accordion-header-icon {
+    padding : 10px;
+    margin-right : 10px;
+}
+
+.ui-accordion-content {
+    margin : 0px;
+    margin-top : -10px;
+    margin-bottom : 10px;
+    padding : 10px;
+}
+
+/******************************************************************************/
+
+.-jqui--useAzureAccordion .ui-accordion-header {
+    background-color : #00809E;
+}
+
+.-jqui--useAzureAccordion .ui-accordion-header:hover {
+    background-color : #76B800;
+}
+
+.-jqui--useAzureAccordion .ui-accordion-header a {
+    color : #EFF;
+}
+
+.-jqui--useAzureAccordion .ui-accordion-header:hover a {
+    color : #FFF;
+}
+
+.-jqui--useAzureAccordion .ui-accordion-header .ui-icon-triangle-1-e {
+    background : url(images/rightArrow.gif) right center no-repeat;
+}
+
+.-jqui--useAzureAccordion .ui-accordion-header .ui-icon-triangle-1-s {
+    background : url(images/downArrow.gif) right center no-repeat;
+}
+
+.-jqui--useAzureAccordion .ui-accordion-content {
+    border : 3px solid #33A7CF; 
+    border-top : none;
+}
+
+/******************************************************************************/
+
+.ui-dialog { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    overflow : hidden;
+    
+    padding : 10px; 
+}
+
+.ui-dialog { /***/
+    background-color : #33A7CF;  
+}
+
+.ui-draggable .ui-dialog-titlebar { 
+    cursor: move; 
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    position: relative;
+    padding: 10px;
+}
+
+.ui-dialog .ui-dialog-titlebar { /***/
+    font-size : 25px;    
+    color : #FFF;
+    background-color : #00809E;
+}
+
+.ui-dialog .ui-dialog-title { 
+    float: left; 
+    margin : 0px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close { 
+    float : right;
+    width : 30px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover { /***/
+    background-color : #00607A;
+}
+
+.ui-dialog .ui-dialog-titlebar-close span { 
+    display: block;  
+    padding : 0px;
+}
+
+.ui-dialog .ui-icon-closethick { 
+    display: block; 
+    text-indent: -99999px; 
+    overflow: hidden; 
+    background-repeat: no-repeat;
+    
+    background-image : url('images/cross.gif'); 
+    background-position :  center center; 
+    background-repeat : no-repeat;
+}
+
+.ui-dialog .ui-dialog-content {
+    overflow: auto;
+    padding : 10px;
+}
+
+.ui-dialog .ui-resizable-se { 
+    width: 20px; 
+    height: 20px; 
+    right: 5px; 
+    bottom: 5px; 
+}
+
+
+.ui-dialog .ui-icon-gripsmall-diagonal-se { 
+ 
+}
+
+.ui-dialog .ui-icon-grip-diagonal-se { /***/
+    background-image : url('images/gripAzure.gif'); 
+    background-position :  right bottom; 
+    background-repeat : no-repeat;
+}
+
+
+/******************************************************************************/
+
+.ui-dialog .ui-dialog-buttonpane { 
+    display : block;
+   
+    padding-top : 10px;
+    margin : 0px;
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-bottom : 10px;
+    
+    text-align: left; 
+}
+
+.ui-dialog .ui-dialog-buttonpane { /***/
+    border-top : 2px solid #006A86; 
+}
+
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right; 
+}
+
+.ui-dialog .ui-dialog-buttonpane button { 
+    display : inline-block;
+    margin : 0px; 
+    margin-left : 5px;
+    cursor: pointer; 
+}
+
+/******************************************************************************/
+
+.ui-button {
+    padding : 6px;
+    border : none;
+    cursor: pointer;
+}
+
+.ui-button { /***/
+    color : #CEE;
+    background-color : #006A86; 
+}
+
+.ui-button:hover { /***/
+    background-color : #00607A;
+    color : #FFF;
+}
+
+.ui-button .ui-button-text { 
+    display: block;  
+}
+
+.ui-button .ui-button-text { /***/
+    font-size : 16px;  
+}
+
+
+
+

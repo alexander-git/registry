@@ -1,0 +1,11 @@
+<div ng-if="recordOnTimeCount === 0">
+   В этой категории пока нет специализаций. 
+</div>
+<div ng-if="recordOnTimeCount !== 0">
+    <div ng-repeat="s in specializations" ng-if="s.recordOnTime === true" class="selectableItemWrapper">
+        <a ng-href="{{s | specializationUrl}}" ng-click="selectSpecialization(s)" class="selectableItem -darkAzure -darkAzure--action -roundedCorners">
+            {{s.name}}
+        </a>
+        <div class="-stopFloat"></div>
+    </div>
+</div>

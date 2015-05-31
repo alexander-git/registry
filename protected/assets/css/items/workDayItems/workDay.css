@@ -1,0 +1,66 @@
+/******************************************************************************/
+.workDay {
+    font-size : 18px;
+}
+
+/******************************************************************************/
+
+.workDay .workDay__process {
+    
+}
+
+.workDay .workDay__infoMessage {
+    
+}
+
+.workDay .workDay__errorMessage {
+    
+}
+
+.workDay .workDay__dayIsNotExistsMessage {
+    font-size : 21px;
+}
+
+/******************************************************************************/
+.workDay .workDay__generalInfo {
+    font-size : 21px;
+}
+
+.workDay__generalInfo .workDay__date {
+   
+}
+
+.workDay__generalInfo .workDay__specializationName {
+    
+}
+
+.workDay__generalInfo .workDay__doctorInfo {
+
+}
+
+.workDay__doctorInfo .workDay__doctorName {
+    
+}
+
+/******************************************************************************/
+.workDay  .workDay__published {
+    
+}
+
+/******************************************************************************/
+.workDay__nextButton {
+    cursor : pointer;
+}
+
+.workDay__previousButton {
+    cursor : pointer;
+}
+
+.workDay__performButton {
+    cursor : pointer;
+}
+
+.workDay__quitButton {
+    cursor : pointer;
+}
+

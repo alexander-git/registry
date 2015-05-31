@@ -1,0 +1,73 @@
+.search {
+    
+}
+
+.search .search__inputPanel {
+    
+}
+
+.search__inputPanel .search__textToSearch {
+    
+}
+
+.search__inputPanel .search__searchButton {
+    
+}
+
+.search__inputPanel .search__showAllButton {
+    
+}
+
+.search .search__process {
+    
+}
+
+.search .search__nothingIsFound {
+   
+}
+
+.search .search__resultPanel {
+    
+}
+
+.search__resultPanel .search__result {
+
+}
+
+.search .search__errorMessage {
+    
+}
+
+.search .search__selectButton {
+    
+}
+
+.search .search__quitButton {
+    
+}
+
+/* search--usingBlockAsResult */
+
+.search--usingBlockAsResult .search__result {
+    display : block;
+    width : 100%;
+    max-height : 200px;
+    overflow : auto;
+}
+
+/* search--usingSelectAsResult */
+
+.search--usingSelectAsResult .search__result  {
+    display : block;
+    width : 100%;
+}
+
+/* search--default */ 
+
+.search--default {
+    
+}
+
+.search--default .search__nothingIsFound {
+    font-size : 18px;
+}

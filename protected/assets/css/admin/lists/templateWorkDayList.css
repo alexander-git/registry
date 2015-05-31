@@ -1,0 +1,26 @@
+.templateWorkDayList {
+    
+}
+
+.templateWorkDayList__listItem {
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+   
+    font-size : 16px;
+    margin-bottom : 12px;
+    margin-top : 0px;
+}
+
+.templateWorkDayListt__listItem .templateWorkDayList__row {
+    margin-bottom : 3px;
+}
+
+.templateWorkDayList__row .templateWorkDayList__name {
+
+}
+
+.templateWorkDayList__row .templateWorkDayList__name a {
+    font-size : 18px;
+}
